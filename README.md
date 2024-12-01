@@ -13,14 +13,20 @@ A simple API for calculating Equated Monthly Installments (EMI) for loans, built
 ### `POST /emi`
 
 **Request Body**:
-```json
+  ```json
+  {
+    "amount": float,       // Principal loan amount
+    "duration": int,       // Loan tenure in months
+    "rate": float,         // Annual interest rate as a fraction (e.g., 0.1 for 10%)
+    "down_payment": float  // Optional down payment, default is 0
+  }
+
+## Response
+```
 {
-  "amount": float,       // Principal loan amount
-  "duration": int,       // Loan tenure in months
-  "rate": float,         // Annual interest rate as a fraction (e.g., 0.1 for 10%)
-  "down_payment": float  // Optional down payment, default is 0
+  "EMI": float  // Monthly EMI amount
 }
 
 
-<h2> Response </h2>
+
 
