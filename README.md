@@ -91,3 +91,8 @@ A simple API for calculating Equated Monthly Installments (EMI) for loans, built
           startCommand: uvicorn main:app --host 0.0.0.0 --port 8000
       }
       ```
+
+## Output
+Link: https://fastapi-render-ey0u.onrender.com/emi
+![image](https://github.com/user-attachments/assets/eef8bc86-8623-413a-9108-b7b9cc637f52)
+
